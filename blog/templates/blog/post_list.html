@@ -16,24 +16,12 @@
             </div>
         </header>
         {% for post in posts %}
-        <main class="container">
-            <div class="row">
-                <div class="col">
-        <article class="post">
-            <time class="date">published: {{ post.published_date }}</time>
-            <h2><a href="">My Second title</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </article>
+            <article>
+                <time>published: {{ post.published_date }}</time>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </article>
         {% endfor %}
-        {% for post in posts %}
-        <article class="post">
-            <time class="date">published: {{ post.published_date }}</time>
-            <h2><a href="">My first title</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </article>
-        {% endfor %}
-                </div>
-            </div>
-        </main>
+            
     </body>
 </html>
