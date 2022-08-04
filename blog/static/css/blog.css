@@ -1,5 +1,5 @@
 .page-header {
-    background-color: #9BCAF2;
+    background-color: #e78f54;
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
@@ -60,14 +60,14 @@ h4 {
 
 .btn-secondary,
 .btn-secondary:visited {
-    color:#9BCAF2;
+    color:#e78f54;
     background: none;
-    border-color: #9BCAF2;
+    border-color: #e78f54;
 }
 
 .btn-secondary:hover {
     color: #FFFFFF;
-    background-color: #9BCAF2;
+    background-color: #e78f54;
 }
 
 .profil_pic {
