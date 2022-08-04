@@ -2,22 +2,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>Blog</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
         <header class="page-header">
-          <div class="container">
-              <h1><a href="/">Django Girls Blog</a></h1>
-          </div>
+            <div class="container">
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    {% include './icons/pencil-fill.svg' %}
+                </a>
+                <h1><a href="/">Personel Blog</a></h1>
+            </div>
+            
         </header>
-        <main class="container">
+        <main class="content container">
+            <h3 class="contact_1"><u>Contact</u></h3>
+            <h2 class="contact">İsfendiyar Berkan Kasapoğlu</h2>
+            <h2 class="contact">Address:Kyrenia/ Republic Of Northern Cyprus</h2>
+            
+
+            <div style="display:flex"><h2 class="contact"><a href="https://www.linkedin.com/in/isfendiyar-berkan-kasapoğlu-600603217/" style="text-decoration: none">Linkedin</a></h2>&nbsp;&nbsp;&nbsp;<div><h2 class="contact"><a href="mailto:berkankasapoglu@hotmail.com" style="text-decoration: none">E-mail</a></h2></div>&nbsp;&nbsp;&nbsp;<div><h2 class="contact"><a href="tel:+90535-928-37-13" style="text-decoration: none">Contact Me</a></h2>&nbsp;</div>
+    </div>
+            
             <div class="row">
                 <div class="col">
-                {% block content %}
-                {% endblock %}
+                    {% block content %}
+                    {% endblock %}
                 </div>
             </div>
         </main>
