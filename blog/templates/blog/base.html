@@ -2,32 +2,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Blog</title>
+        <title>My World</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-        <header class="page-header">
-            <div class="container">
-                <a href="{% url 'post_new' %}" class="top-menu">
-                    {% include './icons/pencil-fill.svg' %}
-                </a>
-                <h1><a href="/">Personel Blog</a></h1>
-            </div>
-            
-        </header>
-        <main class="content container">
-            <h3 class="contact_1"><u>Contact</u></h3>
-            <h2 class="contact">İsfendiyar Berkan Kasapoğlu</h2>
-            <h2 class="contact">Address:Kyrenia/ Republic Of Northern Cyprus</h2>
-            <div style="display:flex"><h2 class="contact"><a href="https://www.linkedin.com/in/isfendiyar-berkan-kasapoğlu-600603217/" style="text-decoration: none">Linkedin</a></h2>&nbsp;&nbsp;&nbsp;<div><h2 class="contact"><a href="mailto:berkankasapoglu@hotmail.com" style="text-decoration: none">E-mail</a></h2></div>&nbsp;&nbsp;&nbsp;<div><h2 class="contact"><a href="tel:+90535-928-37-13" style="text-decoration: none">Call Me</a></h2>&nbsp;</div></div>
-            <div class="row">
-                <div class="col">
-                    {% block content %}
-                    {% endblock %}
+         <div>
+             <header class="page-header">
+                <table class="header_table">
+                    <tr>
+                        <td><a href="\"><img href="/" class="profil_pic" src="{% static 'profil.jpg' %}"></a></td>
+                        <td class="then">
+                        <p class="name">İsfendiyar Berkan Kasapoğlu</p>
+                        <div class="socialleft">
+                        <a href="https://www.linkedin.com/in/isfendiyar-berkan-kasapoğlu-600603217/"><img height="30px" width="30px"  src="{% static 'linkedin.png' %}" ></a>
+                        <a href="https://github.com/IsfendiyarBerkanKasapoglu" style="text-decoration: none"><img height="30px" width="30px" src="{% static 'github.png' %}" ></a>
+                        <a href="https://wa.me/905359283713" rel="nofollow" target="_blank"><img height="30px" width="30px" src="{% static 'WhatsApp.png' %}" ></a>
+                        <a href="mailto:berkankasapoglu@hotmail.com" rel="nofollow" target="_blank"><img height="30px" width="30px" src="{% static 'email.png' %}" ></a>
+                        <p class="textme">Text Me:</p>
+                        <a href="{% url 'post_new' %}" class="top-menu"> {% include './icons/pencil-fill.svg' %} </a>
+                    </div>
+                    </td>
+                        
+                    </tr>
+                    </table>
+           </header>
+            <main class="content container">
+                <div class="row">
+                    <div class="col">
+                    
+                        {% block content %}
+                        {% endblock %}
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
     </body>
 </html>
