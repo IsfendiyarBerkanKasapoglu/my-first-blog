@@ -118,18 +118,18 @@ h4 {
     margin-right:auto; 
 }
 
-ul {
+.ul {
     list-style-type: none;
     margin: 0p;
     padding: 0;
     overflow: hidden;
     background-color: #333;
   }
-li {
+.li {
 
     float: left;
   }
-li a {
+.li a {
     display: block;
     color: white;
     padding: 14px 16px;
@@ -138,7 +138,7 @@ li a {
 }
 
 
-li a:hover:not(.active) {
+.li a:hover:not(.active) {
     background-color: #111;
 }
 
