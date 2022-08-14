@@ -88,7 +88,7 @@ h4 {
 
 .name {
     color:white;
-    font-size: 80px;
+    font-size: 70px;
     margin-bottom: 10px;
     font-family: sans-serif;
 }
@@ -267,4 +267,12 @@ nav .start-contact, a:nth-child(5):hover~.animation {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.name2 {
+    color:white;
+    font-size: 70px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    text-decoration:none;
 }
