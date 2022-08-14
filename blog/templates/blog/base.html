@@ -8,34 +8,32 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-         <div>
-             <header class="page-header">
-                <table class="header_table">
-                    <tr>
-                        <td><a href="\"><img href="/" class="profil_pic" src="{% static 'profil.jpg' %}"></a></td>
-                        <td class="then">
-                        <p class="name">İsfendiyar Berkan Kasapoğlu</p>
-                        <div class="socialleft">
-                        <a href="https://www.linkedin.com/in/isfendiyar-berkan-kasapoğlu-600603217/"><img height="30px" width="30px"  src="{% static 'linkedin.png' %}" ></a>
-                        <a href="https://github.com/IsfendiyarBerkanKasapoglu" style="text-decoration: none"><img height="30px" width="30px" src="{% static 'github.png' %}" ></a>
-                        <a href="https://wa.me/905359283713" rel="nofollow" target="_blank"><img height="30px" width="30px" src="{% static 'WhatsApp.png' %}" ></a>
-                        <a href="mailto:berkankasapoglu@hotmail.com" rel="nofollow" target="_blank"><img height="30px" width="30px" src="{% static 'email.png' %}" ></a>
-                        <p class="textme">Text Me:</p>
-                        <a href="{% url 'post_new' %}" class="top-menu"> {% include './icons/pencil-fill.svg' %} </a>
-                    </div>
-                    </td> 
-                </tr>
-            </table>
-        </header>
-        <div></div>
+        <div>
+            <header class="page-header">
+               <table class="header_table">
+                   <tr>
+                       <td><a href="\"><img href="/" class="profil_pic" src="{% static 'profil.jpg' %}"></a></td>
+                       <td class="then">
+                       <p class="name">İsfendiyar Berkan Kasapoğlu</p>
+                       <div class="socialleft">
+                       <a href="https://www.linkedin.com/in/isfendiyar-berkan-kasapoğlu-600603217/"><img height="30px" width="30px"  src="{% static 'linkedin.png' %}" ></a>
+                       <a href="https://github.com/IsfendiyarBerkanKasapoglu" style="text-decoration: none"><img height="30px" width="30px" src="{% static 'github.png' %}" ></a>
+                       <a href="https://wa.me/905359283713" rel="nofollow" target="_blank"><img height="30px" width="30px" src="{% static 'WhatsApp.png' %}" ></a>
+                       <a href="mailto:berkankasapoglu@hotmail.com" rel="nofollow" target="_blank"><img height="30px" width="30px" src="{% static 'email.png' %}" ></a>
+                   </div>
+                   </td> 
+               </tr>
+           </table>
+       </header>
+       </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Blog</a>
-            <a href="#">Portefolio</a>
-            <a href="#">Contact</a>
+            <a href="{% url 'post_home' %}">Home</a>
+            <a href="{% url 'post_about' %}">About</a>
+            <a href="{% url 'post_quality' %}">Quality</a>
+            <a href="{% url 'post_portfolio' %}">Skills</a>
+            <a href="{% url 'post_new' %}">Contact</a>
             <div class="animation start-home"></div>
-        </nav>
+        </nav>        
             <main class="content container">
                 <div class="row">
                     <div class="col">

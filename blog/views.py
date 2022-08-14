@@ -40,3 +40,52 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 
 
+def post_about(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('post_detail', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/about.html', {'form': form})
+
+
+def post_quality(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('post_quality', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/quality.html', {'form': form})
+
+def post_home(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('post_home', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/home.html', {'form': form})
+
+
+def post_portfolio(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('post_portfolio', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/portfolio.html', {'form': form})

@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KnowLedgE</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+         <div>
+             <header class="page-header">
+                <table class="header_table">
+                    <tr>
+                        <td><a href="\"><img href="/" class="profil_pic" src="{% static 'profil.jpg' %}"></a></td>
+                        <td class="then">
+                        <p class="name">İsfendiyar Berkan Kasapoğlu</p>
+                        <div class="socialleft">
+                        <a href="https://www.linkedin.com/in/isfendiyar-berkan-kasapoğlu-600603217/"><img height="30px" width="30px"  src="{% static 'linkedin.png' %}" ></a>
+                        <a href="https://github.com/IsfendiyarBerkanKasapoglu" style="text-decoration: none"><img height="30px" width="30px" src="{% static 'github.png' %}" ></a>
+                        <a href="https://wa.me/905359283713" rel="nofollow" target="_blank"><img height="30px" width="30px" src="{% static 'WhatsApp.png' %}" ></a>
+                        <a href="mailto:berkankasapoglu@hotmail.com" rel="nofollow" target="_blank"><img height="30px" width="30px" src="{% static 'email.png' %}" ></a>
+                    </div>
+                    </td> 
+                </tr>
+            </table>
+        </header>
+        <nav>
+            <a href="{% url 'post_home' %}">Home</a>
+            <a href="{% url 'post_about' %}">About</a>
+            <a href="{% url 'post_quality' %}">Quality</a>
+            <a href="{% url 'post_portfolio' %}">Skills</a>
+            <a href="{% url 'post_new' %}">Contact</a>
+            <div class="animation start-home"></div>
+        </nav> 
+<div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #588abb;">Quality</h1>
+                <br>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Primary School</h5>
+                            <p class="mb-2"><strong>23 Nisan Primary School / Kyrenia, Republic Of Northern Cyprus</strong> | <small>2007 - 2011</small></p>
+                            <p>I went to primary school in Kyrenia.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Midlle School - High School</h5>
+                            <p class="mb-2"><strong>Levent College / Nicosia, Republic Of Northern Cyprus</strong> | <small>2011 - 2018</small></p>
+                            <p>I educated in middle and high school in Levent College.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Undergraduate Degree</h5>
+                            <p class="mb-2"><strong>Eastern Mediterian University  / Famagusta, Republic Of Northern Cyprus</strong> | <small>2018 - 2023</small></p>
+                            <p>I am studying at Eastern Mediterranean University as a 4th year.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Expericence</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Technical Support</h5>
+                            <p class="mb-2"><strong>Recaioğlu LTD </strong> | <small>2016 - 2017</small></p>
+                            <p>In 2016 and 2017, I worked at Recaioglu Ltd in the summer as a computer repair, data processing operator, technical support and repair of electronic devices and program organizer.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Technical Support</h5>
+                            <p class="mb-2"><strong>LG BYT Consultancy Transactions LTD / Kyrenia, Republic Of Northern Cyprus</strong> | <small>31.07.2016 - 31.08.2016</small></p>
+                            <p>During my internship in 2016, I made repairs using the necessary programs, using my ability to solve problems with a malfunctioning computer.
+                                For example, computer case installation, parts replacement and programming, cleaning computer parts and changing cpu paste, formatting cleanly and installing necessary microsoft office or other programs.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Phone Repair</h5>
+                            <p class="mb-2"><strong>LG BYT Consultancy Transactions LTD / Kyrenia, Republic Of Northern Cyprus</strong> | <small>03.07.2017 - 31.08.2017</small></p>
+                            <p>In 2017, I did my internship on defective phone repair and replacement. A lot of devices came here. We used to detect the first damage of devices with water contact, screens that do not work, and those with broken speakers, and report them to the owners. After the response from the owners, We were repairing the devices or sending it back lg BYT.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Frontend Developer</h5>
+                            <p class="mb-2"><strong> Cyprus Paradise / Kyrenia, Republic Of Northern Cyprus </strong> | <small>19.08.2019 - 13.09.2019</small></p>
+                            <p>I did an internship related with HTML and CSS. I made projects related to the front-end of the Cyprus Paradise web site.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Client Support</h5>
+                            <p class="mb-2"><strong> Turkcell / Nicosia, Republic Of Northern Cyprus</strong> | <small>24 Haziran-26 Temmuz 2019</small></p>
+                            <p>During the intern, I was with the client support team. I did my internship here voluntarily because the other sections were filled. The experience I gained here was not very different from the others, it was just really hard for 3 people in this big company to deal with the whole company.
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Web Developer</h5>
+                            <p class="mb-2"><strong> PiriReis Bilişim / Ankara, Turkey</strong> | <small>18.07.2022 - 09.09.2022</small></p>
+                            <p>I started my internship in PiriReis Bilişim on 18.07.2022.In one week, ı sucessfully read articles on github and learned the tools what I need. The other week, I successfully finished the project called Django girls blog. I am still working on new projects in my internship 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>           
+        </div>
+    </body>
+</html>
